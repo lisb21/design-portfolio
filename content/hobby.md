@@ -6,4 +6,4 @@ Description: Page about my hobby
 Min hobby
 ==================
 
-Jag har sedan innan jag kunde gå sprungit orientering.
+Jag tycker om att modifiera och spela gitarr.
