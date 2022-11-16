@@ -3,9 +3,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
-
+$primary-orange: rgb(250, 128, 84);
 $base-color: #571a39;
+$table-white: rgb(248, 236, 231);
 $headline-primary-color: rgb(12, 52, 85);
+$bg-gradient: linear-gradient(0deg, rgba(92, 155, 167, 0.6782913849133403) 0%, rgba(246, 209, 163, 0.295) 43%, rgba(84, 178, 197, 0.226) 97%);
 @import '../../shared/scss/base';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap');
 
@@ -18,10 +20,8 @@ $headline-primary-color: rgb(12, 52, 85);
 body {
     padding-left: 20%;
     padding-right: 20%;
-    background: rgb(92,155,167);
-    background: linear-gradient(0deg, rgba(92,155,167,0.6782913849133403) 0%,
-    rgba(246, 209, 163, 0.295) 43%,
-    rgba(84, 178, 197, 0.226) 97%);
+    background: rgb(92, 155, 167);
+    background: $bg-gradient;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -31,7 +31,7 @@ body {
 
 
 
-.main{
+.main {
     border-radius: 10px;
     margin: 10px;
     padding: 2em;
@@ -65,7 +65,11 @@ header {
     }
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -73,8 +77,9 @@ h1 {
     font-family: 'Lobster', cursive;
 }
 
-h1, h3 {
-    color: coral;
+h1,
+h3 {
+    color: $primary-orange;
 }
 
 h2 {
@@ -109,36 +114,36 @@ nav {
         font-size: 1.5em;
     }
 
-    ul li:nth-child(5){
+    ul li:nth-child(5) {
         padding: 0.3em;
         border-radius: 5px;
-        background-color: coral;
+        background-color: $primary-orange;
     }
 
     a:hover {
-        color: coral;
+        color: $primary-orange;
     }
 
-    a.active {
-        border-bottom: coral;
+    a .active {
+        border-bottom: $primary-orange;
         border-width: 0;
         border-bottom-width: 0.2em;
         border-style: solid;
     }
 
-    ul li:nth-child(5):hover{
+    ul li:nth-child(5):hover {
         background-color: $headline-primary-color;
     }
 
-    ul li:nth-child(5) .active{
+    ul li:nth-child(5) .active {
         color: rgba(255, 241, 225, 1);
         border-bottom-width: 0;
     }
+
     div .logo {
         width: 200px;
         float: left;
         margin-right: -100px;
-    
     }
 }
 
@@ -147,7 +152,8 @@ p {
     width: calc(100%/1.1);
 }
 
-section a, footer a {
+section a,
+footer a {
     text-decoration: none;
     color: rgb(12, 14, 56);
 }
@@ -168,61 +174,49 @@ table {
     border-color: rgb(92, 178, 204);
     width: calc(100%/1.1);
     margin-left: 2em;
-    margin-top: 0.5em
+    margin-top: 0.5em;
 }
-tr{
+
+tr {
     height: 2em;
 }
 
-th{
+th {
     border-right: 0.25em solid rgb(65, 85, 102); 
 }
 
-td{
+td {
     border-right: 0.1em solid rgb(168, 201, 230);
 }
 
-td:last-child{
+td:last-child {
     border-bottom: 0.1em solid rgb(168, 201, 230);
 }
 
-tr:nth-child(2n+1){
-    background-color:rgb(168, 201, 230)
+tr:nth-child(2n+1) {
+    background-color: rgb(168, 201, 230);
 }
 
-tr:first-child{
+tr:first-child {
     background-color: rgb(65, 85, 102);
     border-top: 0.25em solid rgb(65, 85, 102);
-    color: aliceblue;    
+    color: $table-white;    
 }
 
 /*form*/
-form input:nth-child(1){
+form input:nth-child(1) {
     margin: 0.5em;
-    background-color: white;
+    background-color: rgb(253, 246, 246);
     padding: 0.5em 1.5em;
     text-align: center;
     color: rgba(0, 0, 0, 0.897);
-    border: 0.2em solid coral;
+    border: 0.2em solid $primary-orange;
     transition-duration: 0.4s;
 }
 
 form input:nth-child(1):hover {
     background-color: #fcac35;
-    color: white;
-}
-
-#form-name, #form-email {
-    border: #fcac35;
-}
-
-#form-name:hover, #form-email:hover {
-    background-color: #f7dab0;
-    border: #fcac35;
-}
-
-#form-name:focus, #form-email:focus {
-    background-color: aqua;
+    color: rgb(253, 246, 246);
 }
 
 /*footer*/
@@ -236,8 +230,9 @@ footer {
     flex-basis: 100%;
 
     a:hover {
-        color: coral;
+        color: $primary-orange;
     }
+
     i {
         font-size: 1.5em;
         gap: 0.1em;
@@ -247,44 +242,37 @@ footer {
 }
 
 /*media queries*/
-
-@media(max-width: 639px){
+@media(max-width: 639px) {
     body {
         padding-left: 0%;
         padding-right: 0%;
     }
+
     .main {
         padding: 0.25em;
         margin: 0;
-    }
-    #container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-content: stretch;
     }
  
     nav ul {
         gap: 2.5em;
     }
-    #newsletter {
-        margin-top: 10px;
-        margin-left: calc(90%/3);
-        margin-bottom: 20px;
-    }
-    #newsletter h3 {
-        color:rgb(12, 52, 85);
-    }
-    table{
+
+    table {
         margin-left: 0;
     }
-    p, h2, h3, table {
+
+    p,
+    h2,
+    h3,
+    table {
         font-size: 1.25em;
     }
+
     footer {
         padding: 0.25em;
         font-size: 0.9em;
     }
+
     footer i {
         font-size: 2em;
         float: right;
@@ -293,11 +281,12 @@ footer {
     }
 }
 
-@media(min-width:640px) and (max-width: 1280px){
+@media(min-width:640px) and (max-width: 1280px) {
     body {
         padding-left: 10%;
         padding-right: 10%;
     }
+
     nav ul {
         gap: 1em;
     }

@@ -6472,7 +6472,11 @@ header p {
   color: rgb(247, 16, 0);
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -6480,8 +6484,9 @@ h1 {
   font-family: "Lobster", cursive;
 }
 
-h1, h3 {
-  color: coral;
+h1,
+h3 {
+  color: rgb(250, 128, 84);
 }
 
 h2 {
@@ -6516,13 +6521,13 @@ nav a {
 nav ul li:nth-child(5) {
   padding: 0.3em;
   border-radius: 5px;
-  background-color: coral;
+  background-color: rgb(250, 128, 84);
 }
 nav a:hover {
-  color: coral;
+  color: rgb(250, 128, 84);
 }
-nav a.active {
-  border-bottom: coral;
+nav a .active {
+  border-bottom: rgb(250, 128, 84);
   border-width: 0;
   border-bottom-width: 0.2em;
   border-style: solid;
@@ -6545,7 +6550,8 @@ p {
   width: 90.9090909091%;
 }
 
-section a, footer a {
+section a,
+footer a {
   text-decoration: none;
   color: rgb(12, 14, 56);
 }
@@ -6591,36 +6597,23 @@ tr:nth-child(2n+1) {
 tr:first-child {
   background-color: rgb(65, 85, 102);
   border-top: 0.25em solid rgb(65, 85, 102);
-  color: aliceblue;
+  color: rgb(248, 236, 231);
 }
 
 /*form*/
 form input:nth-child(1) {
   margin: 0.5em;
-  background-color: white;
+  background-color: rgb(253, 246, 246);
   padding: 0.5em 1.5em;
   text-align: center;
   color: rgba(0, 0, 0, 0.897);
-  border: 0.2em solid coral;
+  border: 0.2em solid rgb(250, 128, 84);
   transition-duration: 0.4s;
 }
 
 form input:nth-child(1):hover {
   background-color: #fcac35;
-  color: white;
-}
-
-#form-name, #form-email {
-  border: #fcac35;
-}
-
-#form-name:hover, #form-email:hover {
-  background-color: #f7dab0;
-  border: #fcac35;
-}
-
-#form-name:focus, #form-email:focus {
-  background-color: aqua;
+  color: rgb(253, 246, 246);
 }
 
 /*footer*/
@@ -6634,7 +6627,7 @@ footer {
   flex-basis: 100%;
 }
 footer a:hover {
-  color: coral;
+  color: rgb(250, 128, 84);
 }
 footer i {
   font-size: 1.5em;
@@ -6653,27 +6646,16 @@ footer i {
     padding: 0.25em;
     margin: 0;
   }
-  #container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: stretch;
-  }
   nav ul {
     gap: 2.5em;
-  }
-  #newsletter {
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-bottom: 20px;
-  }
-  #newsletter h3 {
-    color: rgb(12, 52, 85);
   }
   table {
     margin-left: 0;
   }
-  p, h2, h3, table {
+  p,
+h2,
+h3,
+table {
     font-size: 1.25em;
   }
   footer {
