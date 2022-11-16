@@ -1,0 +1,43 @@
+Innehåll
+
+    Din portfölj ska ha en om-sida med routen /about där du skriver ett kort stycke om vilka tekniker du använder i sidan.
+
+    Sidan ska vara hyfsat responsiv, t.ex. ingen horisontella scroll eller bilder som tar sönder flödet.
+
+SASS-tema
+
+    Jobba vidare med eller skapa ett nytt tema i me/portfolio/themes/.
+
+    Temat ska bestå utav en style.scss som är huvudfilen för ditt tema. Här importerar du eventuella moduler du skapar.
+
+    Temat ska ladda in modulen normalize.css.
+
+    Temat ska ladda in minst en extern font via t.ex Google Fonts.
+
+    Temat ska använda sig av minst två ikoner via t.ex Font Awesome (GitHub ikonen inkluderad).
+
+    Jobba vidare med ditt tema. Du behöver inte styla jättemycket, det kommer fler möjligheter under kursen. Men, det måste vara ett hyfsat gott grundtema så att webbplatsen går att använda.
+
+    Använd någon typ av funktionalitet som SASS erbjuder utöver CSS, t.ex. operatorer, variabler, arv eller nästlade regler.
+
+    Testa att gå in på din sida via telefonen. Det behöver inte vara perfekt, men en viss spacing kanske fungerar på desktop men inte så bra på telefonen.
+
+Avslutningsvis
+
+    Din kod ska gå igenom stylelint, testkör med npm run lint.
+
+    Aktivera ditt tema i me/portfolio/config/config.yml.
+
+    Gör en dbwebb publish me och kontrollera att allt fungerar på studentservern.
+
+    Commit:a alla filer, inklusive temat och lägg till en (ny) tagg (2.0.*).
+
+    Pusha repot till GitHub, inklusive taggarna.
+
+Extrauppgifter
+
+Det finns flera sätt att minska antalet beroende man har mot andra tjänster eller storleken på sidan. Nedan är två förslag som är rimliga för kursmomentet:
+
+    Bytt ut Font Awesome mot Unicode ikoner.
+
+    Ladda hem dina fonter och importera dem lokalt istället för ifrån din externa fonttjänst.
