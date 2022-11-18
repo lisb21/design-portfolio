@@ -6,7 +6,3 @@ Template: kmom
 
 Report
 ==========================
-
-
-
-Sampel report page.

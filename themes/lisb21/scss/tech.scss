@@ -1,0 +1,140 @@
+.landingpage {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 0.5fr 0.5fr 0.5fr 1fr;
+    grid-template-areas:    "INTRO INTRO INTRO"
+                            "HTML HTML CSS"
+                            "GIT GIT PHP"
+                            "SQLITE SQLITE PHP"
+                            "JAVASCRIPT JAVASCRIPT PYTHON";
+    gap: 1em 1em;
+
+    
+    .git {
+        grid-area: GIT;
+    }
+
+    .html {
+        grid-area: HTML;
+    }
+
+    .intro {
+        grid-area: INTRO;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .css {
+        grid-area: CSS;
+    }
+
+    .sqlite {
+        grid-area: SQLITE;
+    }
+
+    .python {
+        grid-area: PYTHON;
+    }
+
+    .javascript {
+        grid-area: JAVASCRIPT;
+    }
+
+    .php {
+        grid-area: PHP;
+    }
+
+    .tech-box {
+        min-width: 100px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        border-radius: 15px;
+        background-color: rgb(113, 194, 248);
+        display: flex;
+        flex-flow: row wrap;
+        
+        a {
+            text-decoration: none;
+            color: rgb(255, 148, 86);
+            font-family: 'Lobster', cursive;
+            justify-self: center;
+            background-color: rgb(255, 252, 241);
+            margin-left: 15px;
+            border-width: 0.5em;
+            border-radius: 2em;
+            border-style: solid;
+            border-color: rgb(255, 252, 241);
+            max-height: 40px;
+            font-size: 2em;
+        }
+    
+        a:hover {
+            color: rgb(22, 34, 85);
+        }
+
+        h1 {
+            visibility: hidden;
+        }
+
+        pre {
+            margin-left: 30px;
+            overflow: hidden;
+        }
+
+        code {
+            white-space: pre-line;
+        }
+
+        p {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+            margin-left: 2em;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media(min-width:640px) and (max-width: 1050px) {
+    .landingpage {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 0.5fr 0.5fr 0.5fr 1fr 0.4fr 1fr 1fr;
+        grid-template-areas:"INTRO"
+                            "CSS"                        
+                            "HTML"
+                            "GIT"
+                            "PHP"
+                            "SQLITE"
+                            "JAVASCRIPT"
+                            "PYTHON";
+    }
+    
+    
+}
+
+@media(max-width: 639px) {
+    .landingpage {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 0.2fr 0.2fr 0.2fr 0.5fr 0.3fr 0.5fr 0.7fr;
+        grid-template-areas:"INTRO"
+                            "HTML"
+                            "CSS"
+                            "GIT"
+                            "PHP"
+                            "SQLITE"
+                            "JAVASCRIPT"
+                            "PYTHON";
+    }
+    
+}
+
+

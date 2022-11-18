@@ -4,15 +4,22 @@
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
-        
-        {{ content }}
-        {% for page in pages("report")|sort_by("title") %}
-        <div class="post">
-            <h2><a href="{{ page.url }}">{{ page.title }}</a></h3>
-            <p class="excerpt">{{ page.description }}</p>
-        </div>
-        {% endfor %}
-        
+        <div class="report">
+            {{ content }}
+            {% for page in pages("report")|sort_by("title") %}
+                {% if page.title == "Kmom10" %}
+                    <div class="kmom-box project">
+                        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                        <p class="excerpt">{{ page.description }}</p>
+                    </div>
+                {% else %}     
+                    <div class="kmom-box">
+                        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                        <p class="excerpt">{{ page.description }}</p>
+                    </div>   
+                {% endif %}      
+            {% endfor %}
+        </div>  
     </div>
     
     {% include 'incl/footer.twig' %}
