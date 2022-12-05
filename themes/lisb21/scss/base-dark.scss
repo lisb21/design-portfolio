@@ -6,18 +6,20 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/scss/base';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap');
 
+
+$highlight: rgba(125, 207, 255, 0.199);
 $primary-headline-color: rgb(255, 110, 58);
-$hover-headline-color: rgb(9, 26, 41);
-$base-font-color: rgb(9, 26, 41);
-$main-window-bg-color: rgba(255, 243, 221, 0.2);
-$navbar-primary-color: rgb(12, 52, 85);
-$navbar-hover-color: rgba(255, 122, 74, 0.863);
+$hover-headline-color: rgb(71, 129, 179);
+$base-font-color: rgb(116, 173, 223);
+$main-window-bg-color: rgba(28, 31, 54, 0.2);
+$navbar-primary-color: rgb(136, 196, 245);
+$navbar-hover-color: rgba(255, 143, 102, 0.863);
 $navbar-attention-color: rgb(255, 121, 72);
-$navbar-bg-color: rgba(255, 241, 225, 0.8);
-$report-bg-color: rgb(113, 194, 248);
-$primary-backdrop-bg-color: rgb(248, 236, 231);
-$bg-gradient-backup-color: rgb(92, 155, 167); 
-$bg-gradient: linear-gradient(0deg, rgba(92, 155, 167, 0.6782913849133403) 0%, rgba(246, 209, 163, 0.295) 43%, rgba(84, 178, 197, 0.226) 97%);
+$navbar-bg-color: rgba(17, 20, 41, 0.8);
+$report-bg-color: rgb(18, 38, 61);
+$primary-backdrop-bg-color: rgba(75, 173, 218, 0.329);
+$bg-gradient-backup-color: rgb(14,23,31);
+$bg-gradient: linear-gradient(0deg, rgba(14,23,31,1) 0%, rgba(36,54,68,1) 47%, rgba(35,80,89,1) 97%);
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -76,8 +78,23 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul,
+code,
+ol,
+pre,
+td {
     font-family: 'Open Sans', sans-serif;
+    color: $base-font-color;
+}
+
+a:link,
+a:visited {
+    color: $primary-headline-color;
+}
+a:hover {
+    color: $navbar-hover-color;
 }
 
 h1 {
@@ -116,7 +133,7 @@ nav {
     a {
         text-decoration: none;
         display: block;
-        color: $navbar-primary-color;
+        color: rgb(116, 173, 223);
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -124,11 +141,11 @@ nav {
     ul li:nth-child(3) {
         padding: 0.3em;
         border-radius: 5px;
-        background-color: $primary-headline-color;
+        background-color: $primary-backdrop-bg-color;
     }
 
     a:hover {
-        color: $primary-headline-color;
+        color: $navbar-hover-color;
     }
 
     .active {
@@ -138,12 +155,20 @@ nav {
         border-style: solid;
     }
 
+    .active:hover {
+        border-bottom: $navbar-hover-color;
+        border-width: 0;
+        border-bottom-width: 0.2em;
+        border-style: solid;
+    }
+
     ul li:nth-child(3):hover {
-        background-color: $navbar-primary-color;
+        background-color: $highlight;
+        color: $navbar-hover-color;
     }
 
     ul li:nth-child(3) .active {
-        color: $primary-backdrop-bg-color;
+        color: $primary-headline-color;
         border-bottom-width: 0;
     }
 
@@ -157,6 +182,7 @@ nav {
 p {
     font-size: 0.9em;
     width: calc(100%/1.1);
+    color: $base-font-color;
 }
 
 section a,
@@ -200,7 +226,6 @@ tr:nth-child(2n+1) {
 }
 
 tr:first-child {
-    background-color: $navbar-primary-color;
     border-top: 0.25em solid $navbar-primary-color;
     color: $primary-headline-color;    
 }
@@ -231,9 +256,6 @@ footer {
     align-self: flex-end;
     flex-basis: 100%;
 
-    a:hover {
-        color: $primary-headline-color;
-    }
 
     i {
         font-size: 1.5em;
@@ -307,5 +329,6 @@ footer {
         a {
             font-size: 1.25em;
         }
+
     } 
 }
