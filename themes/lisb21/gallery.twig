@@ -1,0 +1,42 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {{ content }}  
+        <div class="gallery">
+            {% set imageGallery =   {one:   {name: "gallery/ice.jpg",
+                                            alt: "is i skärgården"},
+                                    two:    {name: "gallery/autumn.jpg",
+                                            alt: "en skog i hösten"},
+                                    three:  {name: "gallery/riksdagen.jpg",
+                                            alt: "ornament på fasaden till riksdagshuset"},
+                                    four:   {name: "gallery/sea.jpg",
+                                            alt: "en bit ruin längst stranden"},
+                                    five:   {name: "gallery/treetops.jpg",
+                                            alt: "trädtoppar i en höstskog"},
+                                    six:    {name: "gallery/waterfall.jpg",
+                                            alt: "ett vattenfall men långsamt flöde"}} 
+            %}
+            {% for key,value in imageGallery %}
+                <div class="{{ key }}"> 
+                    <a href="{{ base_url }}/image/{{ value.name }}" target="_blank">
+                        <picture>
+                            <source media="(max-width: 839)" srcset="{{ base_url }}/image/{{ value.name }}?w=300&h=300&crop-to-fit&q=40">
+                            <source media="(min-width: 840)" srcset="{{ base_url }}/image/{{ value.name }}?w=800&h=400&crop-to-fit&q=60">
+                            <img src="{{ base_url }}/image/{{ value.name }}?w=800&h=400&crop-to-fit" alt="{{ value.alt }}">
+                        </picture>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/n02tImce3AE" frameborder="0" allowfullscreen></iframe>
+        </div>  
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
