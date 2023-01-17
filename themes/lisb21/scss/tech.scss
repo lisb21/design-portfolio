@@ -83,6 +83,11 @@
                 border-radius: 0em;
                 max-height: 40px;
                 font-size: 2em;
+                transition: color 0.5s ease;
+            }
+
+            a:hover {
+                color: rgb(96, 235, 240);
             }
         }
 

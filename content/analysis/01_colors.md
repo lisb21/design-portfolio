@@ -25,7 +25,7 @@ Resultat
 [Lynnandtonic](https://lynnandtonic.com/)
 -----------------------  
 
-![lynnandtonic](%assets_url%/img/lynnandtonicv2.jpg){.lynnandtonic}
+![lynnandtonic](image/lynnandtonicv2.jpg?width=300&height=300&q=70){.lynnandtonic}
 </br>
 
 I alla delarna av sidan används rödorange #D95E47 som accent i övre vänstra hörnet. Färgen återkommer i olika element på sidan. i en del återkommer den som bakgrundsfärg.
@@ -55,7 +55,7 @@ menyerna på sidan är var och en representerade i 5 olika färger, samma färge
 Färgerna valda för att representera kategorierna fungerar som "double split complimentary", eller delat komplimenterande färgschema. Där den gula och blåa nyansen balanserar ut varandra. Och det samma gäller för den röda och gröna (Beaird & George, 2014).
 </br>
 
-![lynnandtonic](%assets_url%/img/lynnandtonic2v2.jpg){.lynnandtonic}
+![lynnandtonic](image/lynnandtonic2v2.jpg?width=300&height=300&q=70){.lynnandtonic}
 </br>
 
 
@@ -81,7 +81,7 @@ Där serifer används är upplägget och färgerna mer lika en papperstidning, v
 [Jävligtgott](https://javligtgott.se/)
 ----------------------- 
 
-![javligtgott](%assets_url%/img/javligtgottv2.jpg){.javligtgott}
+![javligtgott](image/javligtgottv2.jpg?width=300&height=300&q=70){.javligtgott}
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -110,7 +110,7 @@ Blogginläggen skulle med fördel kunna ha serif i text-stilen för att öka lä
 [Krigshistoriepodden](https://www.krigshistoriepodden.com/)
 ----------------------- 
 
-![krigshistoriepodden](%assets_url%/img/krigshistoriepoddenv2.jpg){.krigshistoriepodden}
+![krigshistoriepodden](image/krigshistoriepoddenv2.jpg?width=300&height=300&q=70){.krigshistoriepodden}
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>

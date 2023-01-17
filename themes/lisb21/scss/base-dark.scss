@@ -7,19 +7,20 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap');
 
 
-$highlight: rgba(125, 207, 255, 0.199);
+$highlight: rgb(125, 181, 255, 0.199);
 $primary-headline-color: rgb(255, 110, 58);
 $hover-headline-color: rgb(71, 129, 179);
 $base-font-color: rgb(116, 173, 223);
-$main-window-bg-color: rgba(28, 31, 54, 0.2);
+$main-window-bg-color: rgba(28, 34, 54, 0.2);
 $navbar-primary-color: rgb(136, 196, 245);
 $navbar-hover-color: rgba(255, 143, 102, 0.863);
 $navbar-attention-color: rgb(255, 121, 72);
-$navbar-bg-color: rgba(17, 20, 41, 0.8);
+$navbar-bg-color: rgb(14, 23, 32);
 $report-bg-color: rgb(18, 38, 61);
-$primary-backdrop-bg-color: rgba(75, 173, 218, 0.329);
+$primary-backdrop-bg-color: rgb(39, 93, 129);
 $bg-gradient-backup-color: rgb(14, 23, 31);
-$bg-gradient: linear-gradient(0deg, rgba(14, 23, 31, 1) 0%, rgba(36, 54, 68, 1) 47%, rgba(35, 80, 89, 1) 97%);
+$bg-gradient: linear-gradient(0deg, rgba(14, 23, 31, 1) 0%, rgb(36, 47, 68) 47%, rgb(35, 60, 89) 97%);
+$paper-bg: url("../../../assets/img/papertexdark.webp");
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -225,6 +226,10 @@ video {
 img {    
     margin-top: 0.5em;
     border-radius: 1em;
+}
+
+img:not([alt]) {
+    outline: 4px rgb(250, 0, 0) dashed !important;
 }
 
 /*table*/

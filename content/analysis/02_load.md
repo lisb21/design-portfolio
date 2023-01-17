@@ -28,7 +28,7 @@ Resultat
 [Lynnandtonic](https://lynnandtonic.com/){.link-header}
 -----------------------  
 
-![lynnandtonic](%assets_url%/img/lynnandtonicv2.jpg){.lynnandtonic}
+![lynnandtonic](image/lynnandtonicv2.jpg?width=300&height=300&q=70){.lynnandtonic}
 </br>
 
 Enbart en kommentar från google pagespeed, under Diagnostics "Avoid an excessive DOM size".
@@ -37,7 +37,7 @@ Inte så mycket att säga, har ingen egentlig förbättring att föreslå.
 [Jävligtgott](https://javligtgott.se/){.link-header}
 ----------------------- 
 
-![javligtgott](%assets_url%/img/javligtgottv2.jpg){.javligtgott}
+![javligtgott](image/javligtgottv2.jpg?width=300&height=300&q=70){.javligtgott}
 
 Kommentarer från google pagespeed:
 
@@ -67,7 +67,7 @@ Javascripten borde uppdateras och optimeras. Kanske göra sig av med överflödi
 [Krigshistoriepodden](https://www.krigshistoriepodden.com/){#krigshistoriepodden .linkheader}
 ----------------------- 
 
-![krigshistoriepodden](%assets_url%/img/krigshistoriepoddenv2.jpg){.krigshistoriepodden}
+![krigshistoriepodden](image/krigshistoriepoddenv2.jpg?width=300&height=300&q=70){.krigshistoriepodden}
 
 Kommentarer från google pagespeed:
 

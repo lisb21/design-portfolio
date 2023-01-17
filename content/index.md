@@ -6,6 +6,6 @@ Description: This is our index page.
 Home page
 ==========================
 
-![me](%assets_url%/img/catandguitar.jpg){.me}
+![me](image/catandguitar.jpg?w=50%&h=50%&q=70){.me}
 
 

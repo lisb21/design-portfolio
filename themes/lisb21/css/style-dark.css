@@ -6435,7 +6435,7 @@ body {
   padding-left: 20%;
   padding-right: 20%;
   background: rgb(14, 23, 31);
-  background: linear-gradient(0deg, rgb(14, 23, 31) 0%, rgb(36, 54, 68) 47%, rgb(35, 80, 89) 97%);
+  background: linear-gradient(0deg, rgb(14, 23, 31) 0%, rgb(36, 47, 68) 47%, rgb(35, 60, 89) 97%);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -6449,7 +6449,7 @@ body {
   padding: 2em;
   flex-direction: row wrap;
   flex-basis: 100%;
-  background-color: rgba(28, 31, 54, 0.2);
+  background-color: rgba(28, 34, 54, 0.2);
   min-height: 65vh;
   flex-wrap: wrap;
   overflow: hidden;
@@ -6457,7 +6457,7 @@ body {
 
 /*header*/
 header {
-  background-color: rgba(17, 20, 41, 0.8);
+  background-color: rgb(14, 23, 32);
   width: 100%;
   padding-bottom: 2em;
   box-sizing: border-box;
@@ -6516,7 +6516,7 @@ nav {
   align-self: flex-start;
   padding: 1em;
   width: 100%;
-  background-color: rgba(17, 20, 41, 0.8);
+  background-color: rgb(14, 23, 32);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -6537,7 +6537,7 @@ nav a {
 nav ul li:nth-child(3) {
   padding: 0.3em;
   border-radius: 5px;
-  background-color: rgba(75, 173, 218, 0.329);
+  background-color: rgb(39, 93, 129);
 }
 nav a:hover {
   color: rgba(255, 143, 102, 0.863);
@@ -6555,7 +6555,7 @@ nav .active:hover {
   border-style: solid;
 }
 nav ul li:nth-child(3):hover {
-  background-color: rgba(125, 207, 255, 0.199);
+  background-color: rgba(125, 181, 255, 0.199);
   color: rgba(255, 143, 102, 0.863);
 }
 nav ul li:nth-child(3) .active {
@@ -6613,6 +6613,10 @@ img {
   border-radius: 1em;
 }
 
+img:not([alt]) {
+  outline: 4px red dashed !important;
+}
+
 /*table*/
 table {
   border-collapse: collapse;
@@ -6647,7 +6651,7 @@ tr:first-child {
 /*form*/
 form input:nth-child(1) {
   margin: 0.5em;
-  background-color: rgba(75, 173, 218, 0.329);
+  background-color: rgb(39, 93, 129);
   padding: 0.5em 1.5em;
   text-align: center;
   color: rgb(136, 196, 245);
@@ -6657,12 +6661,12 @@ form input:nth-child(1) {
 
 form input:nth-child(1):hover {
   background-color: rgb(255, 110, 58);
-  color: rgba(75, 173, 218, 0.329);
+  color: rgb(39, 93, 129);
 }
 
 /*footer*/
 footer {
-  background-color: rgba(17, 20, 41, 0.8);
+  background-color: rgb(14, 23, 32);
   padding: 2em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -6781,12 +6785,12 @@ table {
   color: rgb(255, 110, 58);
   font-family: "Lobster", cursive;
   justify-self: center;
-  background-color: rgba(75, 173, 218, 0.329);
+  background-color: rgb(39, 93, 129);
   margin-left: 15px;
   border-width: 0.5em;
   border-radius: 2em;
   border-style: solid;
-  border-color: rgba(75, 173, 218, 0.329);
+  border-color: rgb(39, 93, 129);
   max-height: 40px;
   font-size: 2em;
 }
@@ -6800,6 +6804,10 @@ table {
   border-radius: 0em;
   max-height: 40px;
   font-size: 2em;
+  transition: color 0.5s ease;
+}
+.landingpage .tech-box h2 a:hover {
+  color: rgb(96, 235, 240);
 }
 .landingpage .tech-box a:hover {
   color: rgb(116, 173, 223);
@@ -6850,20 +6858,107 @@ table {
     grid-template-areas: "INTRO" "HTML" "CSS" "GIT" "PHP" "SQLITE" "JAVASCRIPT" "PYTHON";
   }
 }
-.landingpage .tech-box {
+.reportlanding {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr 1fr 1fr;
+  grid-template-areas: "INTRO" "c" "l" "p";
+  gap: 1em 1em;
+}
+.reportlanding .colors {
+  grid-area: c;
+}
+.reportlanding .principles {
+  grid-area: p;
+}
+.reportlanding .load {
+  grid-area: l;
+}
+.reportlanding .intro {
+  grid-area: INTRO;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+.reportlanding .report-box {
+  min-width: 100px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  border-radius: 15px;
+  background: url("../../../assets/img/papertexdark.webp") no-repeat;
+  background-size: cover;
+  background-color: rgb(18, 38, 61);
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 10px;
   padding-bottom: 15px;
 }
-.landingpage .colors {
-  grid-area: HTML;
+.reportlanding .report-box h2 a:nth-of-type(1) {
+  text-decoration: none;
+  color: rgb(255, 110, 58);
+  font-family: "Lobster", cursive;
+  justify-self: center;
+  background-color: rgb(39, 93, 129);
+  margin-left: 15px;
+  border-width: 0.5em;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: rgb(39, 93, 129);
+  max-height: 40px;
+  font-size: 2em;
 }
-.landingpage .principles {
-  grid-area: GIT;
+.reportlanding .report-box h2 a {
+  text-decoration: none;
+  color: rgb(116, 173, 223);
+  font-family: "Lobster", cursive;
+  justify-self: center;
+  margin-left: 15px;
+  border-width: 0em;
+  border-radius: 0em;
+  max-height: 40px;
+  font-size: 2em;
+  transition: color 0.5s ease;
 }
-.landingpage .load {
-  grid-area: SQLITE;
+.reportlanding .report-box h2 a:hover {
+  color: rgb(96, 235, 240);
 }
-
-.lightspeed-data-container {
+.reportlanding .report-box a:hover {
+  color: rgb(116, 173, 223);
+}
+.reportlanding .report-box h1:nth-of-type(1) {
+  visibility: hidden;
+}
+.reportlanding .report-box h1 {
+  color: rgb(116, 173, 223);
+}
+.reportlanding .report-box pre {
+  margin-left: 30px;
+  overflow: hidden;
+}
+.reportlanding .report-box code {
+  white-space: pre-line;
+}
+.reportlanding .report-box p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 2em;
+  font-size: 1em;
+  margin-right: 10px;
+}
+.reportlanding .report-box h2 {
+  font-size: 0.9em;
+}
+.reportlanding .report-box img {
+  margin-bottom: 1em;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.reportlanding .lightspeed-data-container {
   width: 100%;
   min-width: 80%;
   margin-right: 10px;
@@ -6880,6 +6975,9 @@ table {
   gap: 1em 1em;
   align-items: center;
   justify-content: center;
+}
+.gallery img:hover {
+  opacity: 0.5;
 }
 .gallery .one,
 .gallery .two,

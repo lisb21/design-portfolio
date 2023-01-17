@@ -1,24 +1,129 @@
-.landingpage {
-    .tech-box {
-        padding-bottom: 15px;
-    }
+.reportlanding {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-areas:    "INTRO"
+                            "c"
+                            "l"
+                            "p";
+    gap: 1em 1em;
+
 
     .colors {
-        grid-area: HTML;
+        grid-area: c;
     }
 
     .principles {
-        grid-area: GIT;
+        grid-area: p;
     }
-
+    
     .load {
-        grid-area: SQLITE;
+        grid-area: l;
+    }
+
+    .intro {
+        grid-area: INTRO;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .report-box {
+        min-width: 100px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        border-radius: 15px;
+        background: $paper-bg no-repeat;
+        background-size: cover;
+        background-color: $report-bg-color;
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        
+        h2 {
+            a:nth-of-type(1) {
+                text-decoration: none;
+                color: $primary-headline-color;
+                font-family: 'Lobster', cursive;
+                justify-self: center;
+                background-color: $primary-backdrop-bg-color;
+                margin-left: 15px;
+                border-width: 0.5em;
+                border-radius: 2em;
+                border-style: solid;
+                border-color: $primary-backdrop-bg-color;
+                max-height: 40px;
+                font-size: 2em;
+            }
+
+            a {
+                text-decoration: none;
+                color: $base-font-color;
+                font-family: 'Lobster', cursive;
+                justify-self: center;
+                margin-left: 15px;
+                border-width: 0em;
+                border-radius: 0em;
+                max-height: 40px;
+                font-size: 2em;
+                transition: color 0.5s ease;
+            }
+            a:hover {
+                color: rgb(96, 235, 240);
+            }
+        }
+
+        a:hover {
+            color: $base-font-color;
+        }
+        
+        h1:nth-of-type(1) {
+            visibility: hidden;
+        }
+        
+        h1 {
+            color: $base-font-color;
+        }
+
+        pre {
+            margin-left: 30px;
+            overflow: hidden;
+        }
+
+        code {
+            white-space: pre-line;
+        }
+
+        p {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+            margin-left: 2em;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-size: 0.9em;
+        }
+
+        img {
+            margin-bottom: 1em;
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+    .lightspeed-data-container {
+        width: 100%;
+        min-width: 80%;
+        margin-right: 10px;
+        min-height: 900px;
     }
 }
 
-.lightspeed-data-container {
-    width: 100%;
-    min-width: 80%;
-    margin-right: 10px;
-    min-height: 900px;
-}
