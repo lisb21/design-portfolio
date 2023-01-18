@@ -39,7 +39,7 @@
         padding: 0.5em 0;
     }
 
-    .js .nav-toggle {
+    /* .js .nav-toggle {
         display: block;
         float: right;
         width: 2em;
@@ -48,5 +48,5 @@
         line-height: 2em;
         text-align: center;
         cursor: pointer;
-    }
+    } */
 }

@@ -86,7 +86,7 @@ En tydlig förbättring som kan göras är att vissa tredjepart widgets inte lad
 Analys
 -----------------------
 </br>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_JKK_w_zlTaDUbKYnGiqeNiihPPifgyEgMBNu4a9ghOBGHDqnKPxUOZMSIM64JVRnyQxlwsTmQj1r/pubhtml?widget=true&amp;headers=false" class="lightspeed-data-container"></iframe>
+<iframe title="loadspeed data" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_JKK_w_zlTaDUbKYnGiqeNiihPPifgyEgMBNu4a9ghOBGHDqnKPxUOZMSIM64JVRnyQxlwsTmQj1r/pubhtml?widget=true&amp;headers=false" class="lightspeed-data-container"></iframe>
 </br>
 
 För dom flesta sidorna (Lynnandtonic excluderad) så verkar hantering av javascript i form av bibliotek och tredjepartstjänster vara den stora boven när det kommer till nätverkshastighet. Bildformat är också en vanlig anledning till förbättring enligt google pagespeed.

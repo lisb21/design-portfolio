@@ -6457,7 +6457,7 @@ body {
 
 /*header*/
 header {
-  background-color: rgba(255, 241, 225, 0.8);
+  background-color: rgba(238, 254, 255, 0.8);
   width: 100%;
   padding-bottom: 2em;
   box-sizing: border-box;
@@ -6469,7 +6469,7 @@ header h1 {
   color: rgb(12, 52, 85);
 }
 header p {
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
 }
 
 h2,
@@ -6486,7 +6486,7 @@ h1 {
 
 h1,
 h3 {
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
 }
 
 h2 {
@@ -6500,7 +6500,7 @@ nav {
   align-self: flex-start;
   padding: 1em;
   width: 100%;
-  background-color: rgba(255, 241, 225, 0.8);
+  background-color: rgba(238, 254, 255, 0.8);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -6521,13 +6521,13 @@ nav a {
 nav ul li:nth-child(3) {
   padding: 0.3em;
   border-radius: 5px;
-  background-color: rgb(255, 110, 58);
+  background-color: rgb(218, 89, 3);
 }
 nav a:hover {
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
 }
 nav .active {
-  border-bottom: rgb(255, 110, 58);
+  border-bottom: rgb(218, 89, 3);
   border-width: 0;
   border-bottom-width: 0.2em;
   border-style: solid;
@@ -6590,7 +6590,7 @@ img {
 }
 
 img:not([alt]) {
-  outline: 4px red dashed !important;
+  outline: 4px rgb(255, 0, 0) dashed !important;
 }
 
 /*table*/
@@ -6622,7 +6622,7 @@ tr:nth-child(2n+1) {
 tr:first-child {
   background-color: rgb(12, 52, 85);
   border-top: 0.25em solid rgb(12, 52, 85);
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
 }
 
 /*form*/
@@ -6632,18 +6632,18 @@ form input:nth-child(1) {
   padding: 0.5em 1.5em;
   text-align: center;
   color: rgb(12, 52, 85);
-  border: 0.2em solid rgb(255, 110, 58);
+  border: 0.2em solid rgb(218, 89, 3);
   transition-duration: 0.4s;
 }
 
 form input:nth-child(1):hover {
-  background-color: rgb(255, 110, 58);
+  background-color: rgb(218, 89, 3);
   color: rgb(248, 236, 231);
 }
 
 /*footer*/
 footer {
-  background-color: rgba(255, 241, 225, 0.8);
+  background-color: rgba(238, 254, 255, 0.8);
   padding: 2em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -6652,7 +6652,7 @@ footer {
   flex-basis: 100%;
 }
 footer a:hover {
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
 }
 footer i {
   font-size: 1.5em;
@@ -6762,7 +6762,7 @@ table {
 }
 .landingpage .tech-box h2 a:nth-of-type(1) {
   text-decoration: none;
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
   font-family: "Lobster", cursive;
   justify-self: center;
   background-color: rgb(248, 236, 231);
@@ -6877,7 +6877,7 @@ table {
 }
 .reportlanding .report-box h2 a:nth-of-type(1) {
   text-decoration: none;
-  color: rgb(255, 110, 58);
+  color: rgb(218, 89, 3);
   font-family: "Lobster", cursive;
   justify-self: center;
   background-color: rgb(248, 236, 231);
